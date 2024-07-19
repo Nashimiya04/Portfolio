@@ -1,0 +1,146 @@
+/* .bg-img{
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20230702/pngtree-3d-render-of-a-programmer-in-action-image_3752209.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width:100%;
+    height: 700px;
+    position: relative;
+}
+
+.position-content{
+    width:134px;
+    height: 42px;
+    position: absolute;
+    top:58%;
+    left:40%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(40, 38, 38);border-radius: 5px;
+}
+.position-content p{
+    padding-left: 10px;
+}
+.position-title{
+    position: absolute;
+    top:27%;
+    left:36%;
+    color:white;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position-content p span{
+    color:orange;
+}  */
+
+
+.Skills-title{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  font-family:open sans, Sans-serif ;
+  font-weight: 700;
+  color:white;
+  /* margin-left: 20px; */
+}
+.skill{
+    width:85%;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.skill-title{
+    display: block;
+    font-family:open sans, Sans-serif ;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.skill-bar   
+{
+    position: relative;
+    display: block;
+    height:100%;
+    width:95%;
+    border-radius: 6px;
+    background: #ffa500;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity:0;
+}
+.skill-content{
+    
+    height:2px;
+    width:100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color:#555555;
+}
+.skill-bar .html{
+    /* width:90%; */
+    
+    animation-delay: 0.1s;
+}
+
+ .css{
+    width:80%;
+    
+    animation-delay: 0.1s;
+}
+ .javascript{
+    width:70%;
+    animation-delay: 0.2s;
+}
+ .react{
+    width:60%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width:0%;
+        opacity:1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ 
+.skill-percentage{
+    position: absolute;
+    right:-21px;
+    top:-40px;
+    font-size: 12px;
+    font-weight: 500;
+    color:orange;
+    font-family: open sans, Sans-serif;
+   padding: 7px 15px;
+   border-radius:3px ;
+   border: 1px solid orange;
+   /* background-color: #ffa500; */
+   z-index:1;
+}
+.skill-percentage::before{
+    content:'';
+    position: absolute;
+    right:23px;
+    top:23px;
+    background-color: rgb(35 38 38 / 88%);
+    height: 10px;
+    width:10px;
+    z-index:1;border: 1px solid orange;
+    
+     transform: translateX(-50%) rotate(45deg); 
+     border-width: 0 1px 1px 0
+}
+@media (max-width: 768px) {
+    .Skills-title {
+        width: 83%;
+        font-size: 27px;
+}
+}
