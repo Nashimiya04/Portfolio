@@ -8,7 +8,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import { FaSchool, FaGraduationCap } from "react-icons/fa";
 import Navbar from '../Navbar/Navbar';
 import resume from '../../Assests/Nashimiya A resume.pdf'
-
+import { Link } from 'react-router-dom';
+import {useTypewriter} from 'react-simple-typewriter'
 const About = () => {
   const infoItems = [
     { label: 'Name', value: 'Nashimiya' },
@@ -18,22 +19,40 @@ const About = () => {
     { label: 'Nationality', value: 'Indian' },
     { label: 'Email', value: 'nashimiya0402@gmail.com' },
     { label: 'Location', value: 'Chennai' },
-    { label: 'Skype', value: 'Nashimiya' }
+    { label: 'Skype', value: 'Nashimiya' },
+    { label: 'Github', value: 'Nashimiya04' },
+    { label: 'Graduation', value: 'B.TECH(IT)' }
   ];
-   
-    
+  const [text]=useTypewriter({
+    words:['Nashimiya','Frond-End Developer'],
+    loop:0,
+  });
+  
   return (
     <div className='about-Container'>
-      <Navbar/>
-      <div className='about-title'>
-        <h2>About me</h2>
+      <div className="overlay"><div className='about-background'>
+        <div className='overlay_color'></div>
+        <div className='about-title'>
+        <h3>About me</h3>
+        <div className="title-holder">
+          <Link to='/'> <p> <span>Home</span></p></Link>
+           <p className='bar-icon'>About me</p>
+        </div>
       </div>
+      </div>
+      </div>
+      <div className='image-divider'></div>
+      <Navbar/>
+      
       <div className='aboutSection'>
         <div className='aboutSection-image'>
-          <img src={img1} alt="profileImg" className='Image' />
+          <img src={img1} alt="profileImg" className='Image-1' />
         </div>
         <div className='about-description'>
-          <h1>I'M NASHIMIYA</h1>
+          <div className='change-text'>
+              <span>I'M <span className='heroSection-Header' >
+              {text}</span></span >
+            </div>
           <div className='about-Content'>
             {infoItems.map((item, index) => (
               <div key={index} className='info-item'>
@@ -58,17 +77,17 @@ const About = () => {
       <VerticalTimeline lineColor="orange">
         <VerticalTimelineElement className="timeElement" iconStyle={{ background: "white", color: "orange" }} icon={<FaSchool />}
           date={<span style={{ fontSize: '16px', fontFamily: 'open sans, sans-serif', color: 'white' }}>2017-2018</span>}>
-          <h3 style={{ fontSize: '20px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>SSLC - RAJAS MATRICULATION SCHOOL</h3>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>SSLC - RAJAS MATRICULATION SCHOOL</h3>
           <p style={{ fontFamily: 'open sans, Sans-serif' }}>Secondary School Leaving Certificate (SSLC) Score: 94%</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement className="timeElement" iconStyle={{ background: "white", color: "orange" }} icon={<FaSchool />}
           date={<span style={{ fontSize: '16px', fontFamily: 'open sans, sans-serif', color: 'white' }}>2019-2020</span>}>
-          <h3 style={{ fontSize: '20px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>HSC - RAJAS MATRICULATION SCHOOL</h3>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>HSC - RAJAS MATRICULATION SCHOOL</h3>
           <p style={{ fontFamily: 'open sans, Sans-serif' }}>Higher Secondary Certificate (HSC) Score:79%</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement className="timeElement" iconStyle={{ background: "white", color: "orange", fontSize: "14px" }} icon={<FaGraduationCap />}
           date={<span style={{ fontSize: '16px', fontFamily: 'open sans, sans-serif', color: 'white' }}>2020-2024</span>}>
-          <h3 style={{ fontSize: '20px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>GRADUATION - ANNA UNIVERSITY</h3>
+          <h3 style={{ fontSize: '16px', fontWeight: 'bold', fontFamily: 'open sans, Sans-serif' }}>GRADUATION - ANNA UNIVERSITY</h3>
           <p style={{ fontFamily: 'open sans, Sans-serif' }}>Graduation score: 92%</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
@@ -76,6 +95,7 @@ const About = () => {
       <div className="Skills-title">
         <h3>PROGRAMMING SKILLS</h3>
       </div>
+      <div className='Skills'>
       <div className='skill'>
         <span className='skill-title'>HTML</span>
         <div className='skill-content'>
@@ -99,7 +119,7 @@ const About = () => {
         <div className='skill-content'>
           <span className=' skill-bar react'><span className='skill-percentage'>60%</span></span>
         </div>
-      </div>
+      </div></div>
     </div>
   );
 }

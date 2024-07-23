@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FaHome, FaUser } from "react-icons/fa";
 import { IoBookSharp } from "react-icons/io5";
 import { BiSolidMessageRounded } from "react-icons/bi";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,39 +15,37 @@ const Navbar = () => {
   };
 
   return (
-    
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="menu-icon" onClick={toggleSidebar}>
-        {isOpen ? <RxCross2 /> : <IoMenu />}
+        {isOpen ? <IoMenu /> :  <RxCross2 />}
       </div>
       <nav className={`side-nav ${isOpen ? 'open' : ''}`}>
         <div className='navbar'>
-        <Link to={"/"} className='navItem'>
-          <span className='navLabel'><FaHome className='navIcon' />
+          <NavLink to={"/"} className='navItem'>
+            <span className='navLabel'><FaHome className='navIcon' /></span>
             <span className='text'>Home</span>
-          </span>
-        </Link>
-        <Link to={"/About"} className='navItem'>
-          <span className='navLabel'><FaUser className='navIcon' />
+          </NavLink>
+          <NavLink to={"/About"} className='navItem'>
+            <span className='navLabel'><FaUser className='navIcon' /></span>
             <span className='text'>About</span>
-          </span>
-        </Link>
-        <Link to={"/Skills"} className='navItem'>
-          <span className='navLabel'><IoBookSharp className='navIcon' />
+          </NavLink>
+          <NavLink to={"/Skills"} className='navItem'>
+            <span className='navLabel'><IoBookSharp className='navIcon' /></span>
             <span className='text'>Skills</span>
-          </span>
-        </Link>
-        <Link to={"/Contact"} className='navItem'>
-          <span className='navLabel'><BiSolidMessageRounded className='navIcon' />
+          </NavLink>
+          <NavLink to={"/Contact"} className='navItem'>
+            <span className='navLabel'><BiSolidMessageRounded className='navIcon' /></span>
             <span className='text'>Contact</span>
-          </span>
-        </Link>
-        </div></nav>
+          </NavLink>
+        </div>
+      </nav>
     </div>
   );
 };
 
 export default Navbar;
+
+
 
 
 

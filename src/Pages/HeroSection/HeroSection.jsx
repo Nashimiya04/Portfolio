@@ -4,7 +4,14 @@ import './HeroSection.css'
 import img1 from '../../Assests/Portfolioimage.jpg'
 import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
+// import Typewriter from 'typewriter-effect'
+import {useTypewriter} from 'react-simple-typewriter'
 const HeroSection = () => {
+const [text]=useTypewriter({
+  words:['Nashimiya','Frond-End Developer'],
+  loop:0,
+});
+
   const navigate = useNavigate();
 
 
@@ -18,18 +25,18 @@ const HeroSection = () => {
         <div className='heroSection-title'> 
         <div className='heroSection-image'> <img src={img1} alt="profileImg"  className='Image' /></div>
           <div className='heroSection-container'>
+            <div className="heroSection_info">
             <h2 className='heroSection-content'>
-            I'M  <span>NASHIMIYA</span> 
+            HI THERE !
             </h2><div className='change-text'>
-              <h3>
-              {/* <span className='heroSection-Header'></span> */}
-              <span className='heroSection-Header'>FRONT-END DEVELOPER</span>
-              </h3>
+              <span>I'M <span className='heroSection-Header' >
+              {text}</span></span >
             </div>
            
-            <p className='heroSection-description'>Proficient in HTML, CSS, JavaScript, and frameworks like React.js. Dedicated to responsive design and intuitive UI/UX."
+            <div className='heroSection-description'><p >I specialize in crafting responsive and intuitive interfaces using HTML, CSS, and JavaScript. I'm eager to apply my skills and learn more in framework like React to create compelling user experiences.</p>
+            </div>
+            </div>
 
-</p>
  <div className='heroSection-button'>
    <button className='primary-btn' onClick={handleWatchNowClick}><FaUser  className='userIcon'/><span>MORE ABOUT ME</span></button>
  </div> </div>

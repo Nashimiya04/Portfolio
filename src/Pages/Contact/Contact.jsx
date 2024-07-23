@@ -4,6 +4,7 @@ import {FaWhatsapp,FaUser,FaEnvelope,FaInstagram,FaDribbble, FaFacebook, FaTwitt
 import { MdEmail } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import Navbar from "../Navbar/Navbar";
+import { Link } from 'react-router-dom';
 
 const contactInfo = [
   {
@@ -38,6 +39,17 @@ const socialProfiles = [
 const Contact= () => {
   return (
     <div className="contacts-container">
+     
+     <div className="contact-backgroundImage">
+     <div className='overlayColor'></div>
+     <div className='contactdetails'>
+        <h3>GET IN TOUCH</h3>
+        <div className="title-container">
+          <Link to='/'> <p> <span>Home</span></p></Link>
+           <p className='bar-icon'>Get in Touch</p>
+        </div>
+      </div>
+     </div><div className='image-divider'></div>
       <Navbar/>
       <div className="contact-title">
         <h3>CONTACT</h3>{" "}
@@ -58,7 +70,7 @@ const Contact= () => {
             <div className="social_info">
               {socialProfiles.map((profile, index) => (
                 <a key={index} href={profile.link} className="social-icon">
-                  <profile.icon />
+                  <profile.icon  className="profile-icon"/>
                 </a>
               ))}
             </div>
