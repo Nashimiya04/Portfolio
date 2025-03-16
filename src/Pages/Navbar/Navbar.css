@@ -82,7 +82,7 @@ body {
   background-color: #000;
 }
 
-.sidebar {
+ .sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -90,15 +90,15 @@ body {
   width: 65px;
   transition: width 0.3s ease;
   z-index: 100;
-}
+} 
 
 .sidebar.open .side-nav {
   transform: translateX(0);
-  /* max-height: 100vh;  */
+ 
   
 }
 
-.side-nav {
+ .side-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -147,7 +147,6 @@ body {
 
 
   
-
 
 
 

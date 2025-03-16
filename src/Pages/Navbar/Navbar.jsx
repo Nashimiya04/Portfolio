@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+    <div className={`sidebar ${isOpen ? '' : 'open'}`}>
       <div className="menu-icon" onClick={toggleSidebar}>
-        {isOpen ? <IoMenu /> :  <RxCross2 />}
+        {isOpen ?  <RxCross2 />:  <IoMenu />}
       </div>
       <nav className={`side-nav ${isOpen ? 'open' : ''}`}>
         <div className='navbar'>
@@ -44,10 +44,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
 
 
 
