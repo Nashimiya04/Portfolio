@@ -511,7 +511,9 @@
   .about-background {
     height: 300px;
   }
-
+.Image-1{
+  width: 100%;
+}
   .about-title {
     font-size: 40px;
     left: 50%;
