@@ -26,7 +26,7 @@ const About = () => {
     { label: "Graduation", value: "B.TECH(IT)" },
   ];
   const [text] = useTypewriter({
-    words: ["Nashimiya", "Frond-End Developer","web designer"],
+    words: ["Nashimiya", "Frond-End Developer", "web designer"],
     loop: 0,
   });
 
@@ -252,7 +252,7 @@ const About = () => {
       </div>
       <div className="projectskill">
         <p>
-        React E-Commerce Website :{" "}
+          React E-Commerce Website :{" "}
           <Link
             to="#"
             onClick={() =>
@@ -264,7 +264,7 @@ const About = () => {
             }
             className="projectLink"
           >
-            https://nashimiya-e-commerce.netlify.app/ 
+            https://nashimiya-e-commerce.netlify.app/
           </Link>
         </p>
       </div>

@@ -146,7 +146,6 @@ body {
     width: 100%;
     font-size: 18px;
     line-height: 28px;
-    
   }
 
   .heroSection-Header {
@@ -189,12 +188,12 @@ body {
     height: 174px;
   }
 }
-@media (min-width: 600px){
-  .heroSection-description{
-    width:100%;
+@media (min-width: 600px) {
+  .heroSection-description {
+    width: 100%;
     text-align: justify;
   }
-  .primary-btn{
+  .primary-btn {
     margin-left: 0;
   }
 }

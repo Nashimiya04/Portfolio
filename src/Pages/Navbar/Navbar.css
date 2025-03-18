@@ -1,7 +1,7 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -11,29 +11,30 @@ body {
 
 .navbar {
   width: 56px;
-  height: 341px; 
+  height: 341px;
   background-color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  position: fixed; 
-  top:66px;
+  position: fixed;
+  top: 66px;
   left: 0;
-  padding-top: 30px; 
+  padding-top: 30px;
   margin-left: 20px;
   border-radius: 50px;
-  z-index: 100; 
+  z-index: 100;
 }
 
 .navItem {
   position: relative;
-  text-align: center; 
-  margin-bottom: 20px; }
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .navIcon {
   font-size: 20px;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 .text {
@@ -82,7 +83,7 @@ body {
   background-color: #000;
 }
 
- .sidebar {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -90,15 +91,13 @@ body {
   width: 65px;
   transition: width 0.3s ease;
   z-index: 100;
-} 
+}
 
 .sidebar.open .side-nav {
   transform: translateX(0);
- 
-  
 }
 
- .side-nav {
+.side-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -115,48 +114,22 @@ body {
   align-items: center;
 }
 
-
-
 .side-nav .navItem {
   margin: 10px 0;
 }
 .navItem.active .navIcon {
-  color: orange; 
+  color: orange;
 }
 
 .navItem.active .text {
-  color: orange; 
-  transform: translateX(5px); 
+  color: orange;
+  transform: translateX(5px);
 }
-.navItem.active::after{
-  content: '';
-  position:absolute;
-  right:-17px;
-  top:0px;
+.navItem.active::after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  top: 0px;
   height: 19px;
   border-right: 3px solid orange;
 }
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-

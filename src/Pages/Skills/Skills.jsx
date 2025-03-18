@@ -7,21 +7,22 @@ const Skills = () => {
     <div>
       <div className="contact-backgroundImage">
         <div className="overlay">
-        <div className="overlay-Color"></div>
-        <div className="skilldetails">
-          <h3>Skills</h3>
-          <div className="skill-container">
-            <Link to="/">
-              {" "}
-              <p>
+          <div className="overlay-Color"></div>
+          <div className="skilldetails">
+            <h3>Skills</h3>
+            <div className="skill-container">
+              <Link to="/">
                 {" "}
-                <span>Home</span>
-              </p>
-            </Link>
-            <p className="bar-icon">Skills</p>
+                <p>
+                  {" "}
+                  <span>Home</span>
+                </p>
+              </Link>
+              <p className="bar-icon">Skills</p>
+            </div>
           </div>
         </div>
-      </div></div>{" "}
+      </div>{" "}
       <div className="image-divider"></div>
       <Navbar />
       <div className="Skills-title">

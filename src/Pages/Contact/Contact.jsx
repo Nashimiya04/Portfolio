@@ -67,22 +67,23 @@ const Contact = () => {
         </div>
       </div></div> */}
       <div className="contact-backgroundImage">
-              <div className="overlay">
-              <div className="overlay-Color"></div>
-              <div className="contactdetails">
-                <h3>Get in touch</h3>
-                <div className="title-container">
-                  <Link to="/">
-                    {" "}
-                    <p>
-                      {" "}
-                      <span>Home</span>
-                    </p>
-                  </Link>
-                  <p className="bar-icon">Get in touch</p>
-                </div>
-              </div>
-            </div></div>
+        <div className="overlay">
+          <div className="overlay-Color"></div>
+          <div className="contactdetails">
+            <h3>Get in touch</h3>
+            <div className="title-container">
+              <Link to="/">
+                {" "}
+                <p>
+                  {" "}
+                  <span>Home</span>
+                </p>
+              </Link>
+              <p className="bar-icon">Get in touch</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="image-divider"></div>
       <Navbar />
       <div className="contact-title">
@@ -118,9 +119,10 @@ const Contact = () => {
               <input type="text" placeholder="Your Name" />
             </div>
             <div className="intform">
-            <MdEmail className="user_icon" />
-            <input type="email" placeholder="Your Email" />
-          </div></div>
+              <MdEmail className="user_icon" />
+              <input type="email" placeholder="Your Email" />
+            </div>
+          </div>
           <div className="textarea-input">
             <textarea placeholder="Your Message"></textarea>
             <MdEmail className="user_message" />
