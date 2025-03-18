@@ -146,26 +146,25 @@ body {
     width: 100%;
     font-size: 18px;
     line-height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   .heroSection-Header {
     font-size: 32px;
   }
-  .change-text {
+  /* .change-text {
     width: 367px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 13px;
-  }
+  } */
 
   .heroSection-description {
     font-size: 16px;
     line-height: 26px;
-    width: 380px;
+    /* width: 380px; */
+    text-align: justify;
   }
 
   .heroSection-image {
@@ -175,7 +174,7 @@ body {
   }
 
   .primary-btn {
-    margin-left: 80px;
+    margin-top: 20px;
   }
 }
 
@@ -188,5 +187,92 @@ body {
   .heroSection-image {
     width: 41%;
     height: 174px;
+  }
+}
+@media (min-width: 600px){
+  .heroSection-description{
+    width:100%;
+    text-align: justify;
+  }
+  .primary-btn{
+    margin-left: 0;
+  }
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+  .heroSection-title {
+    width: 85%;
+    margin-top: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .heroSection-container {
+    width: 55%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .heroSection-content {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    text-transform: uppercase;
+  }
+
+  .heroSection-Header {
+    font-size: 38px;
+    font-weight: 500;
+    color: orange;
+    text-transform: uppercase;
+  }
+
+  .heroSection-description {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--white);
+    font-family: open sans, Sans-serif;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .heroSection-button {
+    width: 220px;
+  }
+
+  .primary-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 50px;
+  }
+
+  .primary-btn:hover {
+    background-color: #7a7a7a;
+    color: white;
+  }
+
+  .heroSection-image {
+    width: 45%;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .primary-btn {
+    margin-top: 20px;
+  }
+
+  .heroSection-content span {
+    color: orange;
+    padding-left: 10px;
+  }
+
+  .userIcon {
+    padding-right: 5px;
   }
 }

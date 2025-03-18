@@ -1,10 +1,20 @@
 import React from "react";
 import "./Contact.css";
-import {FaWhatsapp,FaUser,FaEnvelope,FaInstagram,FaDribbble, FaFacebook, FaTwitter, FaYoutube, FaSkype} from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaUser,
+  FaEnvelope,
+  FaInstagram,
+  FaDribbble,
+  FaFacebook,
+  FaTwitter,
+  FaYoutube,
+  FaSkype,
+} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BiSolidMessageRounded } from "react-icons/bi";
 import Navbar from "../Navbar/Navbar";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const contactInfo = [
   {
@@ -36,21 +46,45 @@ const socialProfiles = [
   { icon: FaDribbble, link: "#" },
 ];
 
-const Contact= () => {
+const Contact = () => {
   return (
     <div className="contacts-container">
-     
-     <div className="contact-backgroundImage">
-     <div className='overlayColor'></div>
-     <div className='contactdetails'>
-        <h3>GET IN TOUCH</h3>
-        <div className="title-container">
-          <Link to='/'> <p> <span>Home</span></p></Link>
-           <p className='bar-icon'>Get in Touch</p>
+      {/* <div className="overlay">
+      <div className="contact-backgroundImage">
+        <div className="overlay_color"></div>
+        <div className="contactdetails">
+          <h3>GET IN TOUCH</h3>
+          <div className="title-container">
+            <Link to="/">
+              {" "}
+              <p>
+                {" "}
+                <span>Home</span>
+              </p>
+            </Link>
+            <p className="bar-icon">Get in Touch</p>
+          </div>
         </div>
-      </div>
-     </div><div className='image-divider'></div>
-      <Navbar/>
+      </div></div> */}
+      <div className="contact-backgroundImage">
+              <div className="overlay">
+              <div className="overlay-Color"></div>
+              <div className="contactdetails">
+                <h3>Get in touch</h3>
+                <div className="title-container">
+                  <Link to="/">
+                    {" "}
+                    <p>
+                      {" "}
+                      <span>Home</span>
+                    </p>
+                  </Link>
+                  <p className="bar-icon">Get in touch</p>
+                </div>
+              </div>
+            </div></div>
+      <div className="image-divider"></div>
+      <Navbar />
       <div className="contact-title">
         <h3>CONTACT</h3>{" "}
       </div>
@@ -70,7 +104,7 @@ const Contact= () => {
             <div className="social_info">
               {socialProfiles.map((profile, index) => (
                 <a key={index} href={profile.link} className="social-icon">
-                  <profile.icon  className="profile-icon"/>
+                  <profile.icon className="profile-icon" />
                 </a>
               ))}
             </div>
@@ -79,11 +113,14 @@ const Contact= () => {
 
         <div className="contact-form">
           <div className="input_form">
-            <FaUser className="user_icon" />
-            <input type="text" placeholder="Your Name" />
-            <MdEmail className="user_mail" />
+            <div className="intform">
+              <FaUser className="user_icon" />
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div className="intform">
+            <MdEmail className="user_icon" />
             <input type="email" placeholder="Your Email" />
-          </div>
+          </div></div>
           <div className="textarea-input">
             <textarea placeholder="Your Message"></textarea>
             <MdEmail className="user_message" />
@@ -93,16 +130,12 @@ const Contact= () => {
             <button type="button">SEND MESSAGE</button>
           </div>
         </div>
-       
       </div>
-      
     </div>
   );
 };
 
 export default Contact;
-
-
 
 // import React, { useState } from 'react';
 // import { IoMenu } from "react-icons/io5";
@@ -146,10 +179,6 @@ export default Contact;
 //           <span className='text'>Skills</span></span></div></Link>
 //           <Link to={"/Contact"}><div className='navItem'><span className='navLabel'><BiSolidMessageRounded className='navIcon' />
 //           <span className='text'>Contact</span></span></div></Link>
-
-
-
-
 
 //       </div>
 //     </div>

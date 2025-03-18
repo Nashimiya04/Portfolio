@@ -26,7 +26,7 @@ const About = () => {
     { label: "Graduation", value: "B.TECH(IT)" },
   ];
   const [text] = useTypewriter({
-    words: ["Nashimiya", "Frond-End Developer"],
+    words: ["Nashimiya", "Frond-End Developer","web designer"],
     loop: 0,
   });
 

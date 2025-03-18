@@ -4,77 +4,79 @@ body {
   /* background-color: black; */
   font-family: Poppins;
 }
-.contact-backgroundImage{
+.contact-backgroundImage {
   background-image: url("https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width:100%;
-    height: 523px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 523px;
+  position: relative;
 }
-.overlayColor{
-  /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-    z-index: 2;
-    background-color: rgba(0, 0, 0, .8);
-    height: 523px;
-}.contactdetails{
+.overlay_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+.contactdetails {
   font-size: 50px;
   font-weight: 700;
-  color:white;
+  color: white;
   position: relative;
   /* width:80%; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
- 
+
   font-family: Poppins;
   position: absolute;
-  top:160px;
-  left:35%;
+  top: 160px;
+  left: 35%;
   z-index: 2;
-}   
-.contactdetails h3{
+}
+.contactdetails h3 {
   margin-top: 0px;
   text-transform: uppercase;
 }
-.title-container{
+.title-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   /* padding: 10px 30px; */
   border-radius: 5px;
-  width:44%;
-  height:45px;
+  width: 44%;
+  height: 45px;
   position: absolute;
-  left:20%;
-  top:75%;
+  left: 20%;
+  /* top:75%; */
 }
-.title-container p span{
-  color:orange
+.title-container p span {
+  color: orange;
 }
-.bar-icon:before{
-  content: '/';
+.bar-icon:before {
+  content: "/";
   padding-left: 5px;
   padding-right: 5px;
 }
-.title-container p{
+.title-container p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
 }
 .title-container p span:hover {
-cursor: pointer;
+  cursor: pointer;
 }
-.title-container a{
+.title-container a {
   text-decoration: none;
 }
-.image-divider{
-  width:100%;
+.image-divider {
+  width: 100%;
   border-bottom: 3px solid #555555;
 }
 .contact-title h3 {
@@ -82,7 +84,6 @@ cursor: pointer;
   font-family: open sans, Sans-serif;
   font-weight: 700;
   color: white;
- 
 }
 .contacts-container {
   width: 100%;
@@ -128,7 +129,6 @@ cursor: pointer;
   flex-direction: column;
   /* align-items: flex-end; */
   margin-bottom: 20px;
-  position: relative;
 }
 .info_details {
   display: flex;
@@ -205,11 +205,11 @@ cursor: pointer;
   /* display: flex;
   align-items: center;
   /* justify-content: flex-start; */
-  position: relative; 
+  position: relative;
 }
 .message-button button {
   width: 100%;
-  height:100%;
+  height: 100%;
   background-color: #ffc107;
   color: #333;
   border: none;
@@ -223,7 +223,7 @@ cursor: pointer;
 }
 .message {
   position: absolute;
- top:47px;
+  top: 47px;
   left: 25px;
   color: black;
   font-size: 18px;
@@ -253,95 +253,264 @@ cursor: pointer;
   /* transform: rotate(360deg); */
 }
 .profile-icon:hover {
-  
 }
 .social_info {
   display: flex;
   align-items: flex-start;
   gap: 30px;
 }
-
-
-
-@media (max-width: 600px) {
-  .contact-backgroundImage {
-    height: 250px;
-  }
-  .overlayColor{
-    height: 538px;
-  }
-  .contactdetails {
-    height: 250px;
-  }
-  .contactdetails {
-    width: 61%;
-    font-size: 24px;
-    top: 12%;
-    left: 55%;
-    transform: translateX(-50%);
-  }
-  .textarea-input {
-    margin-left: 16px;
-    margin-right: auto;
-    width: 80%;
+.intform {
+  position: relative;
 }
-  .title-container {
+
+/* Media Query for screens less than 1024px (tablets and smaller) */
+@media (max-width: 1024px) {
+  .contact-backgroundImage {
+    height: 400px; /* Reduce background image height */
+  }
+
+  .contactdetails {
+    font-size: 40px;
+    top: 120px;
+    /* left: 25%; */
     width: 70%;
-    left: 5%;
-    top: 40%;
-    transform: translateY(-50%);
   }
-  .title-container p {
-    font-size: 10px;
+
+  .title-container {
+    /* width: 60%; */
+    left: 3%;
   }
-  .contacts-container {
-    padding: 15px 0;
-  }
+
   .contact-flex {
     flex-direction: column;
+    width: 90%;
   }
+
   .contact-info {
     width: 100%;
+    margin-bottom: 20px;
   }
-  .contact-form,
+
+  .contact-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    margin-top: 25px;
   }
-  .input_form{
-    flex-direction: column;
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
+
+  .contact-form textarea {
+    height: 200px;
   }
-  .user_icon {
-    
-    top: 43px;
-    left: 34px;
-  }
-  .user_mail {
- top:128px;
-    left: 34px;}
+
   .message-button {
-    width: 220px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .message-button button{
-    padding: 19px;
     width: 100%;
   }
-  .message {
-    top: 49px;
-    left:27px
-  }
-  .social-profiles {
-    align-items: center;
-  }
+
   .social-info {
-    flex-direction: row;
-    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media Query for screens less than 768px (small tablets and larger smartphones) */
+@media (max-width: 768px) {
+  .contact-backgroundImage {
+    height: 350px; /* Further reduce background image height */
+  }
+
+  .contactdetails {
+    font-size: 35px;
+    top: 100px;
+    left: 28%;
+    width: 70%;
+  }
+
+  .title-container {
+    width: 39%;
+    left: 13%;
+    top: 98px;
+  }
+  
+
+  .contact-flex {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    height: 180px;
+  }
+
+  .message-button {
+    width: 45%;
+  }
+
+  .social-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .input_form {
+    flex-direction: column;
+  }
+  .intform {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens less than 480px (mobile devices) */
+@media (max-width: 480px) {
+  .contact-backgroundImage {
+    height: 250px; /* Reduce background image height for very small screens */
+  }
+
+  .contactdetails {
+    font-size: 30px;
+    top: 70px;
+    /* left: 10%; */
+    width: 80%;
+  }
+
+  .title-container {
+    /* width: 80%; */
+    left: 10%;
+  }
+
+  .contact-flex {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .message-button {
+    
+    width: 406px;
+  }
+
+  .social-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+  .contact-backgroundImage {
+    height: 450px; /* Adjust background image height */
+  }
+
+  .contactdetails {
+    font-size: 45px;
+    top: 140px;
+    left: 28%;
+    width: 65%;
+  }
+  .input_form {flex-direction: column;
+    align-items: flex-start;
+  }.intform {
+    width: 100%;
+
+  }
+  .title-container {
+    /* width: 55%; */
+    left: 8%;
+  }
+
+  .contact-flex {
+   
+    width: 85%;
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    height: 200px;
+  }
+
+  .message-button {
+    width: 45%;
+  }
+
+  .social-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
   }
 }

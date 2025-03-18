@@ -6,6 +6,7 @@ const Skills = () => {
   return (
     <div>
       <div className="contact-backgroundImage">
+        <div className="overlay">
         <div className="overlay-Color"></div>
         <div className="skilldetails">
           <h3>Skills</h3>
@@ -20,7 +21,7 @@ const Skills = () => {
             <p className="bar-icon">Skills</p>
           </div>
         </div>
-      </div>{" "}
+      </div></div>{" "}
       <div className="image-divider"></div>
       <Navbar />
       <div className="Skills-title">

@@ -1,141 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-.contact-backgroundImage{
-    background-image: url("https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/bg.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      width:100%;
-      height: 523px;
-  }
-  .overlay-Color{
-    position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2;
-      background-color: rgba(0, 0, 0, .8);
-      height: 523px;
-  }.skilldetails{
-    font-size: 50px;
-    font-weight: 700;
-    color:white;
-    position: relative;
-    /* width:80%; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-   
-    font-family: Poppins;
-    position: absolute;
-    top:160px;
-    left:40%;
-    z-index: 2;
-  }   
-  .skilldetails h3{
-    margin-top: 0px;
-    text-transform: uppercase;
-  }
-  .skill-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .6);
-    /* padding: 10px 30px; */
-    border-radius: 5px;
-    width:66%;
-    height:45px;
-    position: absolute;
-    left:20%;
-    top:70%;
-  }
-  .skill-container p span{
-    color:orange
-  }
-  .bar-icon:before{
-    content: '/';
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .skill-container p{
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 14px;
-  }
-  .skill-container p span:hover {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.contact-backgroundImage {
+  background-image: url("https://marketifythemes.net/wp/istanbul/1/wp-content/uploads/2024/05/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 523px;
+  position: relative;
+}
+.overlay-Color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 523px;
+}
+.skilldetails {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  /* width:80%; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+
+  font-family: Poppins;
+  position: absolute;
+  top: 160px;
+  left: 40%;
+  z-index: 2;
+}
+.skilldetails h3 {
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+.skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  /* padding: 10px 30px; */
+  border-radius: 5px;
+  width: 66%;
+  height: 45px;
+  position: absolute;
+  left: 20%;
+  top: 70%;
+}
+.skill-container p span {
+  color: orange;
+}
+.bar-icon:before {
+  content: "/";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.skill-container p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+.skill-container p span:hover {
   cursor: pointer;
-  }
-  .skill-container a{
-    text-decoration: none;
-  }
-  .image-divider{
-    width:100%;
-    border-bottom: 3px solid #555555;
-  }
-
-.Skills-title{
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
-    color:white;
-    font-size: 23px;
-    font-weight: 600;
-    font-family: poppins, Sans-serif;
 }
-.skill{
-    width:85%;
-    margin: 25px 0;
-    margin-left: auto;
-    margin-right: auto;
-    
+.skill-container a {
+  text-decoration: none;
 }
-.skill-title{
-    display: block;
-    font-family:open sans, Sans-serif ;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.skill-bar   
-{
-    position: relative;
-    display: block;
-    height:100%;
-    width:95%;
-    border-radius: 6px;
-    background: #ffa500;
-    animation: progress 0.4s ease-in-out forwards;
-    opacity:0;
-}
-.skill-content{
-    
-    height:2px;
-    width:100%;
-    border-radius: 6px;
-    margin-top: 6px;
-    background-color:#555555;
-}
-.skill-bar .html{
-    /* width:90%; */
-    
-    animation-delay: 0.1s;
+.image-divider {
+  width: 100%;
+  border-bottom: 3px solid #555555;
 }
 
- .css{
-    width:80%;
-    
-    animation-delay: 0.1s;
+.Skills-title {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: poppins, Sans-serif;
 }
- .javascript{
-    width:70%;
-    animation-delay: 0.2s;
+.skill {
+  width: 85%;
+  margin: 25px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
- .react{
-    width:60%;
-    animation-delay: 0.3s;
+.skill-title {
+  display: block;
+  font-family: open sans, Sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.skill-bar {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 95%;
+  border-radius: 6px;
+  background: #ffa500;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+.skill-content {
+  height: 2px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background-color: #555555;
+}
+.skill-bar .html {
+  /* width:90%; */
+
+  animation-delay: 0.1s;
+}
+
+.css {
+  width: 80%;
+
+  animation-delay: 0.1s;
+}
+.javascript {
+  width: 70%;
+  animation-delay: 0.2s;
+}
+.react {
+  width: 60%;
+  animation-delay: 0.3s;
 }
 .tail {
   width: 45%;
@@ -146,70 +145,70 @@
   animation-delay: 0.2s;
 }
 @keyframes progress {
-    0%{
-        width:0%;
-        opacity:1;
-    }
-    100%{
-        opacity: 1;
-    }
-}
- 
-.skill_percentage{
-    position: absolute;
-    right:-21px;
-    top:-40px;
-    font-size: 12px;
-    font-weight: 500;
-    color:orange;
-    font-family: open sans, Sans-serif;
-   padding: 7px 15px;
-   border-radius:3px ;
-   border: 1px solid orange;
-   /* background-color: #ffa500; */
-   z-index:1;
-}
-.skill_percentage::before{
-    content:'';
-    position: absolute;
-    right:23px;
-    top:25px;
-    background-color: rgb(35 38 38 / 88%);
-    height: 10px;
-    width:10px;
-    z-index:1;border: 1px solid orange;
-    
-     transform: translateX(-50%) rotate(45deg); 
-     border-width: 0 1px 1px 0
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
+.skill_percentage {
+  position: absolute;
+  right: -21px;
+  top: -40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: orange;
+  font-family: open sans, Sans-serif;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: 1px solid orange;
+  /* background-color: #ffa500; */
+  z-index: 1;
+}
+.skill_percentage::before {
+  content: "";
+  position: absolute;
+  right: 23px;
+  top: 25px;
+  background-color: rgb(35 38 38 / 88%);
+  height: 10px;
+  width: 10px;
+  z-index: 1;
+  border: 1px solid orange;
+
+  transform: translateX(-50%) rotate(45deg);
+  border-width: 0 1px 1px 0;
+}
 
 @media (max-width: 600px) {
   .contact-backgroundImage {
-      height: 300px; /* Example height adjustment */
+    height: 300px;
   }
 
   .overlay-Color {
-    height: 300px; 
+    height: 300px;
   }
 
   .skilldetails {
-      font-size: 36px; /* Example font size adjustment */
-      left: 30%; /* Example positioning adjustment */
-      top: 84px; /* Example positioning adjustment */
+    font-size: 36px;
+    left: 37%;
+    top: 84px;
   }
 
   .skill-container {
-      width: 80%; /* Example width adjustment */
-      left: 10%; /* Example positioning adjustment */
-      top: 64%; /* Example positioning adjustment */
+    width: 80%;
+    left: 10%;
+    top: 64%;
   }
 
   .Skills-title {
-      font-size: 20px; /* Example font size adjustment */
+    font-size: 20px;
   }
 
   .skill-title {
-      font-size: 14px; /* Example font size adjustment */
+    font-size: 14px;
   }
 }

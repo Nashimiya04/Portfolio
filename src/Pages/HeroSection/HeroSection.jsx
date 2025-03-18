@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import {useTypewriter} from 'react-simple-typewriter'
 const HeroSection = () => {
 const [text]=useTypewriter({
-  words:['Nashimiya','Frond-End Developer'],
+  words:['Nashimiya','Frond-End Developer',"web designer"],
   loop:0,
 });
 
